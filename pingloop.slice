@@ -1,0 +1,6 @@
+[Unit]
+Sescription=Slice for pingloop service
+
+[Slice]
+CPUQuota=5%
+MemoryLimit=40M

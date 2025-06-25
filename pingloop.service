@@ -1,0 +1,12 @@
+[Unit]
+Description=Pingloop service to ping 8.8.8.8 every 5 sec.
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/pingloop.sh
+Restart=always
+RestartSec=3
+Slice=pingloop.slice
+
+[Install]
+WantedBy=multi-user.target
